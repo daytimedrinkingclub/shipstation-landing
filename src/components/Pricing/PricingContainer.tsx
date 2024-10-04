@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const PricingContainer = () => {
   return (
     <section className="bg-gray-900 text-white" id="pricing">
@@ -235,16 +237,19 @@ const PricingContainer = () => {
         <div className="relative mt-12">
           <h1 className="inline-flex items-center text-4xl font-bold text-white">
             All this for $9/year
-            <span className="ml-2 animate-pulse">
+            <span className="ml-2 hidden sm:block animate-pulse">
               <div className="rounded-full bg-primary px-3 py-1 text-sm font-semibold text-white">
                 Launch Offer!
               </div>
             </span>
           </h1>
         </div>
-        <button className="my-6 rounded-md bg-primary px-6 py-4 text-base font-bold text-white">
+        <Link
+          href="https://app.shipstation.ai"
+          className="my-6 inline-block rounded-md bg-primary px-6 py-4 text-base font-bold text-white transition duration-300 hover:bg-opacity-90"
+        >
           Create your portfolio now
-        </button>
+        </Link>
       </div>
     </section>
   );

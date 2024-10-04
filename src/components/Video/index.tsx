@@ -5,19 +5,31 @@ import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 
 import ModalVideo from "react-modal-video";
+import Link from "next/link";
 
 const Video = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className="relative z-10 py-16 md:py-20 lg:py-28" id="how-it-works">
+    <section
+      className="relative z-10 py-16 md:py-20 lg:py-28"
+      id="how-it-works"
+    >
       <div className="container">
-        <SectionTitle
-          title="Creating your portfolio on ShipStation is really easy!"
-          paragraph="Don't take our word for it, check how it works"
-          center
-          mb="80px"
-        />
+        <div className="flex flex-col items-center">
+          <SectionTitle
+            title="Creating your portfolio on ShipStation is really easy!"
+            paragraph="Don't take our word for it, Just create one for free."
+            center
+            mb="80px"
+          />
+          <Link
+            href="https://app.shipstation.ai"
+            className="my-6 rounded-md bg-primary px-6 py-4 text-base font-bold text-white transition duration-300 hover:bg-opacity-90"
+          >
+            Create free portfolio
+          </Link>
+        </div>
 
         {/* <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
