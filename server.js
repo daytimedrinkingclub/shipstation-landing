@@ -11,7 +11,7 @@ app.prepare().then(() => {
 
   server.get('/site/:slug', async (req, res) => {
     const { slug } = req.params;
-    const baseUrl = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/shipstation-websites/websites`;
+    const baseUrl = `${process.env.SUPABASE_URL}/storage/v1/object/public/shipstation-websites/websites`;
     const url = `${baseUrl}/${slug}/index.html`;
 
     try {
