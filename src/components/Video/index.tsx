@@ -19,7 +19,7 @@ const Video = () => {
           mb="80px"
         />
 
-        <div className="-mx-4 flex flex-wrap">
+        {/* <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div
               className="mx-auto max-w-[770px] overflow-hidden rounded-md"
@@ -46,7 +46,7 @@ const Video = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <ModalVideo

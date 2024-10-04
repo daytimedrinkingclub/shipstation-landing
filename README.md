@@ -1,61 +1,69 @@
-# Startup - Free Next.js Startup Website Template
+# ShipStation.ai
 
-Startup free, open-source, and premium-quality startup website template for Next.js comes with everything you need to launch a startup, business, or SaaS website, including all essential sections, components, and pages.
+[ShipStation.ai](https://shipstation.ai) is an AI-powered portfolio generator and landing page for showcasing your professional work.
 
-If you're looking for a high-quality and visually appealing, feature-rich Next.js Template for your next startup, SaaS, or business website, this is the perfect choice and starting point for you!
+## Features
 
-### ✨ Key Features
-- Crafted for Startup and SaaS Business
-- Next.js and Tailwind CSS
-- All Essential Business Sections and Pages
-- High-quality and Clean Design
-- Dark and Light Version
-- TypeScript Support
-and Much More ...
+- AI-powered portfolio generation
+- Customizable portfolio designs
+- No coding required
+- Connect custom domains
+- Open-source
 
-### 🙌 Detailed comparison between the Free and Pro versions of Startup
+## Getting Started
 
-| Feature             | Free | Pro |
-|---------------------|------------|----------|
-| Next.js Landing Page             | ✅ Yes      | ✅ Yes      |
-| All The Integrations - Auth, DB, Payments, Blog and many more ...             | ❌ No      | ✅ Yes |
-| Homepage Variations             | 1      | 2 |
-| Additional SaaS Pages and Components             | ❌ No      | ✅ Yes |
-| Functional Blog with Sanity       | ❌ No      | ✅ Yes | ✅ Yes |
-| Use with Commercial Projects            | ✅ Yes      | ✅ Yes      |
-| Lifetime Free Updates             | ✅ Yes      | ✅ Yes |
-| Email Support       | ❌ No         | ✅ Yes       |
-| Community Support         | ✅ Yes         | ✅ Yes       |
+### Prerequisites
 
+- Node.js (v14 or later)
+- npm or yarn
 
-### [🔥 Get Startup Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+### Installation
 
-[![Startup Pro](https://raw.githubusercontent.com/NextJSTemplates/startup-nextjs/main/startup-pro.webp)](https://nextjstemplates.com/templates/saas-starter-startup)
+1. Clone the repository:
 
-Startup Pro - Expertly crafted for fully-functional, high-performing SaaS startup websites. Comes with with Authentication, Database, Blog, and all the essential integrations necessary for SaaS business sites.
+   ```
+   git clone https://github.com/daytimedrinkingclub/shipstation.git
+   cd shipstation-ai
+   ```
 
+2. Install dependencies:
 
-### [🚀 View Free Demo](https://startup.nextjstemplates.com/)
+   ```
+   npm install
+   ```
 
-### [🚀 View Pro Demo](https://startup-pro.nextjstemplates.com/)
+   or
 
-### [📦 Download](https://nextjstemplates.com/templates/startup)
+   ```
+   yarn install
+   ```
 
-### [🔥 Get Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+3. Start the development server:
 
-### [🔌 Documentation](https://nextjstemplates.com/docs)
+   ```
+   npm run dev
+   ```
 
-### ⚡ Deploy Now
+   or
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fstartup-nextjs)
+   ```
+   yarn dev
+   ```
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/startup-nextjs)
+4. Open your browser and navigate to `http://localhost:3000`
 
+## Usage
 
-### 📄 License
-Startup is 100% free and open-source, feel free to use with your personal and commercial projects.
+1. Visit the landing page
+2. Sign up or log in
+3. Follow the guided process to create your AI-generated portfolio
+4. Customize your portfolio as needed
+5. Publish and share your new professional portfolio
 
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
+## Support
 
-### ✨ Explore and Download - Free [Next.js Templates](https://nextjstemplates.com)
+For support, please join our [Discord community](https://discord.gg/wMNmcmq3SX) or [open an issue](https://github.com/daytimedrinkingclub/shipstation/issues) on GitHub.
+
+## Star Us on GitHub
+
+If you find this project useful, please consider giving it a star on GitHub. It helps us a lot!

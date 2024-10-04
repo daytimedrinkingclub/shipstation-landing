@@ -56,20 +56,16 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <Image
-                  src="/images/logo/logo-2.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
-                />
-                <Image
-                  src="/images/logo/logo.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
-                />
+                <div className="flex items-center">
+                  <Image
+                    src="/images/logo/logo.svg"
+                    alt="logo"
+                    width={40}
+                    height={40}
+                    className="mr-2"
+                  />
+                  <span className="text-xl font-bold">ShipStation.AI</span>
+                </div>
               </Link>
             </div>
             <div className="flex w-full items-center justify-center px-4">
