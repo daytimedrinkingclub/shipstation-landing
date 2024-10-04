@@ -1,19 +1,7 @@
 import { notFound } from 'next/navigation'
-import { use } from 'react'
+import { headers } from 'next/headers'
 
-async function fetchHtml(slug: string) {
-  const baseUrl = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/shipstation-websites/websites`
-  const url = `${baseUrl}/${slug}/index.html`
-  console.log(url)
-
-  const response = await fetch(url)
-  if (!response.ok) {
-    throw new Error('Failed to fetch HTML')
-  }
-  return response.text()
-}
-
-export default function SitePage({ params }: { params: { slug: string } }) {
+export default async function SitePage({ params }: { params: { slug: string } }) {
   const { slug } = params
   console.log('Slug:', slug)
 
@@ -22,11 +10,30 @@ export default function SitePage({ params }: { params: { slug: string } }) {
     return notFound()
   }
 
-  const htmlContent = use(fetchHtml(slug))
+  const baseUrl = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/shipstation-websites/websites`
+  const url = `${baseUrl}/${slug}/index.html`
+  console.log(url)
 
-  return (
-    <html dangerouslySetInnerHTML={{ __html: htmlContent }} />
-  )
+  try {
+    const response = await fetch(url)
+    if (!response.ok) {
+      throw new Error('Failed to fetch HTML')
+    }
+    const htmlContent = await response.text()
+
+    // Set custom headers
+    const headersList = headers()
+    headersList.set('X-Custom-Page', 'true')
+    headersList.set('Content-Type', 'text/html')
+
+    // Return the HTML content directly
+    return (
+      <html dangerouslySetInnerHTML={{ __html: htmlContent }} />
+    )
+  } catch (error) {
+    console.error('Error:', error)
+    return notFound()
+  }
 }
 
 export const dynamic = 'force-dynamic'
