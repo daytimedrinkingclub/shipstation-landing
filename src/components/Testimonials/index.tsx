@@ -5,29 +5,29 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Sarah Johnson",
+    designation: "UX Designer",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
+      "ShipStation.ai transformed my portfolio creation process. In just minutes, I had a stunning, professional portfolio that truly showcased my work. It's incredibly intuitive and the AI-powered suggestions were spot-on!",
+    image: "https://desilog.sivaramp.com/i/avatars/3/200",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Michael Chen",
+    designation: "Software Engineer",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+      "As a developer, I was skeptical about AI-generated portfolios. But ShipStation.ai blew me away! It accurately represented my skills and projects, and the customization options allowed me to add my personal touch.",
+    image: "https://desilog.sivaramp.com/i/avatars/4/200",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Mike Rodriguez",
+    designation: "Freelance Graphic Designer",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+      "ShipStation.ai is a game-changer for freelancers like me. It created a portfolio that perfectly captures my style and expertise. The AI-driven design suggestions saved me countless hours. It's like having a personal brand strategist!",
+    image: "https://desilog.sivaramp.com/i/avatars/5/200",
     star: 5,
   },
 ];

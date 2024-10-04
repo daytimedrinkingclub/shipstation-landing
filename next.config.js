@@ -8,7 +8,16 @@ const nextConfig = {
         hostname: "cdn.sanity.io",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "desilog.sivaramp.com",
+        port: "",
+      },
     ],
+  },
+  experimental: {
+    workerThreads: false,
+    cpus: 1
   },
 };
 
