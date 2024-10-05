@@ -7,7 +7,8 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "class",
+  // Remove the darkMode option to prevent automatic dark mode switching
+  // darkMode: "class",
   theme: {
     container: {
       center: true,
