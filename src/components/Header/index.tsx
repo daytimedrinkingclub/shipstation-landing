@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 
 const Header = () => {
@@ -140,12 +139,15 @@ const Header = () => {
                 </nav>
               </div>
             </div>
-            <div className="flex items-center justify-end pr-16 lg:w-[260px] lg:pr-0">
+            <div className="sm:flex items-center justify-end hidden pr-16 lg:w-[260px] lg:pr-0">
               <Link
-                href="https://app.shipstation.ai"
-                className="ease-in-up hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white shadow-btn transition duration-300 hover:bg-opacity-90 hover:shadow-btn-hover md:block md:px-9 lg:px-6 xl:px-9"
+                href={process.env.NEXT_PUBLIC_SHIPSTATION_APP_URL}
+                className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md border border-white/20 bg-primary px-6 py-2 text-base font-semibold text-white backdrop-blur-lg transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50"
               >
-                Get started
+                <span className="text-lg">Get Started</span>
+                <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
+                  <div className="relative h-full w-10 bg-white/20"></div>
+                </div>
               </Link>
             </div>
           </div>

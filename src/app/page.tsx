@@ -1,4 +1,5 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
+import ChatWidget from "@/components/Common/ChatWidget";
+import GithubButton from "@/components/Common/GithubButton";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
@@ -10,16 +11,19 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "ShipStation - Create stunning websites using AI",
-  description: "Create stunning websites with ease using our AI-powered platform.",
+  description:
+    "Create stunning websites with ease using our AI-powered platform.",
   keywords: "AI, website creation, web design, ShipStation, stunning websites",
   openGraph: {
     title: "ShipStation - Create stunning websites",
-    description: "Create stunning websites with ease using our AI-powered platform.",
+    description:
+      "Create stunning websites with ease using our AI-powered platform.",
     url: "https://shipstation.ai",
   },
   twitter: {
     title: "ShipStation - Create stunning websites",
-    description: "Create stunning websites with ease using our AI-powered platform.",
+    description:
+      "Create stunning websites with ease using our AI-powered platform.",
   },
   other: {
     "google-site-verification": "G-2ZEXC0QVN6",
@@ -70,10 +74,17 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
+      <div className="flex justify-center">
+        <GithubButton
+          href="https://github.com/daytimedrinkingclub/shipstation"
+          stars={67}
+        />
+      </div>
       <Video />
       {/* <AboutSectionOne /> */}
       <Testimonials />
       <PricingContainer />
+      <ChatWidget />
     </>
   );
 }

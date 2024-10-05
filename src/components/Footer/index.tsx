@@ -25,6 +25,18 @@ const Footer = () => {
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                   Generate stunning portfolio without tears
                 </p>
+                <div className="text-sm text-body-color dark:text-body-color-dark">
+                  <span>Copyright © 2024 </span>
+                  <span>Created by </span>
+                  <a 
+                    href="https://incubatorop.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    IncubatorOP
+                  </a>
+                </div>
                 {/* <div className="flex items-center">
                   <a
                     href="/"
@@ -112,7 +124,8 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="/about"
+                      href="https://github.com/daytimedrinkingclub/shipstation"
+                      target="_blank"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Star us on Github
@@ -171,12 +184,27 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <Link
-                      href="mailto:anuj@daytimedrinking.club"
+                    <button
+                      onClick={() => {
+                        navigator.clipboard.writeText('anuj@daytimedrinking.club');
+                        const button = event.target as HTMLButtonElement;
+                        button.textContent = 'Email Copied to clipboard!';
+                        setTimeout(() => {
+                          button.textContent = 'Copy Contact Email';
+                        }, 3000);
+                      }}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Contact us
-                    </Link>
+                      Copy Contact Email
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      onClick={() => window.$chatwoot.toggle("open")}
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Chat Support
+                    </button>
                   </li>
                 </ul>
               </div>

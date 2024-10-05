@@ -23,12 +23,6 @@ const Video = () => {
             center
             mb="80px"
           />
-          {/* <Link
-            href="https://app.shipstation.ai"
-            className="my-6 rounded-md bg-primary px-6 py-4 text-base font-bold text-white transition duration-300 hover:bg-opacity-90"
-          >
-            Create free portfolio
-          </Link> */}
         </div>
 
         <div className="-mx-4 flex flex-wrap">
@@ -38,11 +32,11 @@ const Video = () => {
               data-wow-delay=".15s"
             >
               <div className="relative aspect-video">
-                <Image 
-                  src="/images/video/video.png" 
-                  alt="video image" 
+                <Image
+                  src="/images/video/video.png"
+                  alt="video image"
                   fill
-                  style={{ objectFit: 'cover' }}
+                  style={{ objectFit: "cover" }}
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <button
