@@ -23,23 +23,28 @@ const Video = () => {
             center
             mb="80px"
           />
-          <Link
+          {/* <Link
             href="https://app.shipstation.ai"
             className="my-6 rounded-md bg-primary px-6 py-4 text-base font-bold text-white transition duration-300 hover:bg-opacity-90"
           >
             Create free portfolio
-          </Link>
+          </Link> */}
         </div>
 
-        {/* <div className="-mx-4 flex flex-wrap">
+        <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div
               className="mx-auto max-w-[770px] overflow-hidden rounded-md"
               data-wow-delay=".15s"
             >
-              <div className="relative aspect-[77/40] items-center justify-center">
-                <Image src="/images/video/video.jpg" alt="video image" fill />
-                <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
+              <div className="relative aspect-video">
+                <Image 
+                  src="/images/video/video.png" 
+                  alt="video image" 
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
                   <button
                     aria-label="video play button"
                     onClick={() => setOpen(true)}
@@ -58,7 +63,7 @@ const Video = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
 
       <ModalVideo
@@ -66,7 +71,7 @@ const Video = () => {
         autoplay={true}
         start={true}
         isOpen={isOpen}
-        videoId="L61p2uyiMSo"
+        videoId="qzIBzEj3KKA"
         onClose={() => setOpen(false)}
       />
 
