@@ -3,6 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  const openChatWidget = () => {
+    if (typeof window !== 'undefined' && window.$chatwoot) {
+      window.$chatwoot.toggle("open");
+    }
+  };
+
   return (
     <>
       <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
@@ -185,9 +191,9 @@ const Footer = () => {
                 <ul>
                   <li>
                     <button
-                      onClick={() => {
+                      onClick={(event) => {
                         navigator.clipboard.writeText('anuj@daytimedrinking.club');
-                        const button = event.target as HTMLButtonElement;
+                        const button = event.currentTarget as HTMLButtonElement;
                         button.textContent = 'Email Copied to clipboard!';
                         setTimeout(() => {
                           button.textContent = 'Copy Contact Email';
@@ -200,7 +206,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <button
-                      onClick={() => window.$chatwoot.toggle("open")}
+                      onClick={openChatWidget}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Chat Support
