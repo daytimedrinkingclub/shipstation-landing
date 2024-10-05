@@ -13,6 +13,11 @@ const nextConfig = {
         hostname: "desilog.sivaramp.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "api.microlink.io",
+        port: "",
+      },
     ],
   },
 };
