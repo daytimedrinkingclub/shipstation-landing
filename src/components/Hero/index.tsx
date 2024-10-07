@@ -15,23 +15,24 @@ const Hero = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="max-w-[620px]">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Craft Your Dream Portfolio in Minutes, Not Hours
+                  Create Your Personal Website &amp; Portfolio in Minutes, No Coding Required
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Harness the power of AI to create stunning, personalized
-                  portfolios for any profession or language.
+                  ShipStation.ai: Your AI-powered personal website builder. Craft stunning, personalized portfolios for any profession or language, without writing a single line of code.
                 </p>
                 <div className="flex flex-col items-start justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="/showcase"
                     target="_blank"
                     className="group relative isolation-auto z-10 flex items-center justify-center gap-2 overflow-hidden rounded-full border-2 border-gray-50 bg-gray-50 px-4 py-2 text-lg text-gray-800 shadow-xl backdrop-blur-md before:absolute before:-left-full before:-z-10 before:aspect-square before:w-full before:rounded-full before:bg-primary before:transition-all before:duration-700 hover:text-gray-50 before:hover:left-0 before:hover:w-full before:hover:scale-150 before:hover:duration-700 lg:font-semibold"
+                    aria-label="Explore Portfolio Designs"
                   >
                     Explore Designs
                     <svg
                       className="h-8 w-8 rotate-45 justify-end rounded-full border border-gray-700 p-2 text-gray-50 duration-300 ease-linear group-hover:rotate-90 group-hover:border-none group-hover:bg-gray-50"
                       viewBox="0 0 16 19"
                       xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
                     >
                       <path
                         d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
@@ -43,12 +44,14 @@ const Hero = () => {
                     href={process.env.NEXT_PUBLIC_SHIPSTATION_APP_URL}
                     target="_blank"
                     className="group relative isolation-auto z-10 flex items-center justify-center gap-2 overflow-hidden rounded-full border-2 border-primary bg-primary px-4 py-2 text-lg text-white shadow-xl backdrop-blur-md lg:font-semibold"
+                    aria-label="Generate Free Personal Portfolio"
                   >
                     Generate Free Portfolio
                     <svg
                       className="h-8 w-8 rotate-45 justify-end rounded-full border border-white p-2 text-white transition-transform duration-300 ease-linear group-hover:rotate-90"
                       viewBox="0 0 16 19"
                       xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
                     >
                       <path
                         d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"

@@ -41,10 +41,10 @@ const PricingContainer = () => {
               </svg>
               <div>
                 <h2 className="text-xl font-medium text-white">
-                  Premium Designs
+                  Unique Designs
                 </h2>
                 <p className="font-inter mt-2 font-light text-gray-400">
-                  Handcrafted by professional designers
+                  Built in realtime with AI agents
                 </p>
               </div>
             </div>

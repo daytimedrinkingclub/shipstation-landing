@@ -10,20 +10,30 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "ShipStation - Create stunning websites using AI",
+  title: "ShipStation.ai - AI-Powered Personal Website & Portfolio Builder (No Code)",
   description:
-    "Create stunning websites with ease using our AI-powered platform.",
-  keywords: "AI, website creation, web design, ShipStation, stunning websites",
+    "Create stunning personal websites and portfolios in minutes with ShipStation.ai. Our AI-powered platform requires no coding skills. Perfect for engineers, designers, and professionals.",
+  keywords: "personal website builder no code, personal portfolio builder, AI-powered portfolio, resume to website, custom domain integration, portfolio website, no coding required",
   openGraph: {
-    title: "ShipStation - Create stunning websites",
+    title: "ShipStation.ai - Create Your Dream Portfolio in Minutes",
     description:
-      "Create stunning websites with ease using our AI-powered platform.",
+      "Build professional personal websites and portfolios without code. AI-powered, industry-specific designs, and instant online presence.",
     url: "https://shipstation.ai",
+    images: [
+      {
+        url: "https://shipstation.ai/assets/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "ShipStation.ai - AI-Powered Personal Website & Portfolio Builder",
+      },
+    ],
   },
   twitter: {
-    title: "ShipStation - Create stunning websites",
+    card: "summary_large_image",
+    title: "ShipStation.ai - No-Code Personal Website & Portfolio Builder",
     description:
-      "Create stunning websites with ease using our AI-powered platform.",
+      "Transform your resume into a stunning website. AI-powered, no coding required. Create your professional online presence in minutes.",
+    images: ["https://shipstation.ai/assets/twitter-image.png"],
   },
   other: {
     "google-site-verification": "G-2ZEXC0QVN6",
@@ -37,23 +47,22 @@ export default function Home() {
         {`
           {  
             "@context":"http://schema.org",
-            "@type":"Organization",
-            "name":"ShipStation",
-            "logo":"https://shipstation.ai/assets/logo.png",
+            "@type":"WebApplication",
+            "name":"ShipStation.ai",
             "url":"https://shipstation.ai",
-            "brand":{  
-              "@type":"Organization",
-              "name":"ShipStation",
-              "description":"Create stunning websites with ease using our AI-powered platform.",
-              "logo":"https://shipstation.ai/assets/logo.png",
-              "sameAs":[  
-                "https://bubble.io/",
-                "https://durable.co/",
-                "https://www.weebly.com",
-                "https://www.squarespace.com",
-                "https://www.shopify.com",
-                "https://www.wordpress.com"
-              ]
+            "logo":"https://shipstation.ai/assets/logo.png",
+            "description":"AI-powered personal website and portfolio builder. Create professional online presence without coding.",
+            "applicationCategory": "WebApplication",
+            "operatingSystem": "All",
+            "offers": {
+              "@type": "Offer",
+              "price": "250",
+              "priceCurrency": "INR"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "ratingCount": "1000"
             }
           }
         `}
@@ -62,12 +71,15 @@ export default function Home() {
         {`
           {
             "@context": "http://schema.org",
-            "@type": "Website",
-            "name": "ShipStation.AI",
-            "description": "Create stunning websites with ease using our AI-powered platform.",
+            "@type": "WebSite",
+            "name": "ShipStation.ai",
+            "description": "AI-powered personal website and portfolio builder. No coding required.",
             "url": "https://shipstation.ai",
-            "image": "https://shipstation.ai/assets/logo.png",
-            "keywords": "Create stunning websites with ease using our AI-powered platform."
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://shipstation.ai/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
           }
         `}
       </Script>
@@ -81,7 +93,6 @@ export default function Home() {
         />
       </div>
       <Video />
-      {/* <AboutSectionOne /> */}
       <Testimonials />
       <PricingContainer />
       <ChatWidget />

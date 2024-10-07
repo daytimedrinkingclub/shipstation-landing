@@ -18,7 +18,7 @@ const Video = () => {
       <div className="container">
         <div className="flex flex-col items-center">
           <SectionTitle
-            title="Creating your portfolio on ShipStation is really easy!"
+            title="Taking your personal website live with ShipStation is really easy!"
             paragraph="Don't take our word for it, Just create one for free."
             center
             mb="80px"
