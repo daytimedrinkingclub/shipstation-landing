@@ -29,6 +29,7 @@ export default function InspirationPage() {
   });
 
   const baseUrl = process.env.NEXT_PUBLIC_MAIN_URL; // Update this with your actual base URL
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 
   useEffect(() => {
     document.title = "Showcase";
@@ -91,7 +92,7 @@ export default function InspirationPage() {
                 {websites.map((website) => (
                   <div key={website.id} className="group relative aspect-video">
                     <Image
-                      src={`https://api.microlink.io?url=${baseUrl}/site/${website.slug}&screenshot=true&meta=false&embed=screenshot.url`}
+                      src={`${supabaseUrl}/storage/v1/object/public/shipstation-websites/websites/${website.slug}/screenshot.png`}
                       alt={`Preview of ${website.prompt}`}
                       layout="fill"
                       objectFit="cover"

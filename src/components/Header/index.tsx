@@ -61,7 +61,7 @@ const Header = () => {
                     alt="logo"
                     width={40}
                     height={40}
-                    className="mr-2"
+                    className="mr-2 fill-black dark:fill-white"
                   />
                   <span className="text-xl font-bold">ShipStation.AI</span>
                 </div>

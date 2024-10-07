@@ -18,6 +18,16 @@ const nextConfig = {
         hostname: "api.microlink.io",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "shipstation.ai",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "supabasekong-shipstation.badalhibadal.com",
+        port: "",
+      },
     ],
   },
 };
