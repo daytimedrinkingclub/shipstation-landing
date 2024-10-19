@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: "https://shipstation.ai",
     images: [
       {
-        url: "https://shipstation.ai/assets/og-image.png",
+        url: "https://shipstation.ai/images/og.jpg",
         width: 1200,
         height: 630,
         alt: "ShipStation.ai - AI-Powered Personal Website & Portfolio Builder",
