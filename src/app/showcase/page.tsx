@@ -49,7 +49,15 @@ export default function InspirationPage() {
     try {
       const { data, error } = await supabase
         .from("ships")
-        .select("prompt, slug, portfolio_type, id")
+        .select(
+          `
+          *,
+          website_likes (id, user_id)
+        `,
+          { count: "exact" },
+        )
+        .eq("status", "completed")
+        .order("likes_count", { ascending: false })
         .order("id", { ascending: false })
         .range((pageNumber - 1) * 15, pageNumber * 15 - 1);
 
@@ -75,19 +83,22 @@ export default function InspirationPage() {
 
   const Loader = () => (
     <div className="my-20 flex h-full items-center justify-center">
-      <div className="h-16 w-16 animate-spin rounded-full border-b-2 border-t-2 border-gray-200"></div>
+      <div className="h-16 w-16 animate-spin rounded-full border-b-2 border-t-2 border-gray-200 dark:border-gray-600"></div>
     </div>
   );
 
   return (
     <>
-      <div className="mt-20 flex min-h-screen flex-col">
-        {/* Assume there's a header component here */}
+      <div className="flex min-h-screen flex-col bg-white dark:bg-gray-dark">
         <main className="flex flex-grow items-center justify-center">
           {websites.length === 0 && isLoading ? (
             <Loader />
           ) : (
-            <div className="container mx-auto px-4 py-8">
+            <div className="container mx-auto mt-20 px-4 py-8">
+              <h4 className="mb-6 text-xl font-bold leading-tight text-black dark:text-white">
+                Here are some of the websites people have built with
+                ShipStation.AI
+              </h4>
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {websites.map((website) => (
                   <div key={website.id} className="group relative aspect-video">

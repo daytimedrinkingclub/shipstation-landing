@@ -8,17 +8,21 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px] dark:bg-gray-dark"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <div className="max-w-[620px]">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Create Your Personal Website &amp; Portfolio in Minutes, No Coding Required
+                <h1 className="mb-5 text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight dark:text-white">
+                  Create Your Personal Website in minutes
                 </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  ShipStation.ai: Your AI-powered personal website builder. Craft stunning, personalized portfolios for any profession or language, without writing a single line of code.
+                <p className="mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl dark:text-body-color-dark">
+                  Imagine ChatGPT, but for your personal website. No more
+                  searching for the perfect template, messing with copywriting,
+                  or worrying about the code and hosting. <br /> <br />
+                  With ShipStation, you can have your personal website live in
+                  minutes.
                 </p>
                 <div className="flex flex-col items-start justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
@@ -27,7 +31,7 @@ const Hero = () => {
                     className="group relative isolation-auto z-10 flex items-center justify-center gap-2 overflow-hidden rounded-full border-2 border-gray-50 bg-gray-50 px-4 py-2 text-lg text-gray-800 shadow-xl backdrop-blur-md before:absolute before:-left-full before:-z-10 before:aspect-square before:w-full before:rounded-full before:bg-primary before:transition-all before:duration-700 hover:text-gray-50 before:hover:left-0 before:hover:w-full before:hover:scale-150 before:hover:duration-700 lg:font-semibold"
                     aria-label="Explore Portfolio Designs"
                   >
-                    Explore Designs
+                    View Showcase
                     <svg
                       className="h-8 w-8 rotate-45 justify-end rounded-full border border-gray-700 p-2 text-gray-50 duration-300 ease-linear group-hover:rotate-90 group-hover:border-none group-hover:bg-gray-50"
                       viewBox="0 0 16 19"
@@ -42,11 +46,10 @@ const Hero = () => {
                   </Link>
                   <Link
                     href={process.env.NEXT_PUBLIC_SHIPSTATION_APP_URL}
-                    target="_blank"
                     className="group relative isolation-auto z-10 flex items-center justify-center gap-2 overflow-hidden rounded-full border-2 border-primary bg-primary px-4 py-2 text-lg text-white shadow-xl backdrop-blur-md lg:font-semibold"
                     aria-label="Generate Free Personal Portfolio"
                   >
-                    Generate Free Portfolio
+                    Generate My Portfolio
                     <svg
                       className="h-8 w-8 rotate-45 justify-end rounded-full border border-white p-2 text-white transition-transform duration-300 ease-linear group-hover:rotate-90"
                       viewBox="0 0 16 19"
@@ -62,8 +65,8 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full lg:w-1/2">
-              <div className="relative z-10">
+            <div className="w-full min-h-[200px] mt-20 lg:w-1/2">
+              <div className="relative z-10 scale-150">
                 <DotLottieReact src="/hero-lottie.json" autoplay loop />
               </div>
             </div>

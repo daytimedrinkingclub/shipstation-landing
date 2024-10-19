@@ -7,7 +7,6 @@ import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 
 const raleway = Raleway({ subsets: ["latin"] });
-
 export default function RootLayout({
   children,
 }: {
@@ -21,7 +20,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${raleway.className}`}>
+      <body className={`bg-black ${raleway.className}`}>
         <Providers>
           <Header />
           {children}

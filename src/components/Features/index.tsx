@@ -7,13 +7,13 @@ const Features = () => {
     <>
       <section
         id="features"
-        className="py-16 md:py-20 lg:py-28"
+        className="bg-white py-16 md:py-20 lg:py-28 dark:bg-black"
         aria-label="ShipStation Features"
       >
         <div className="container">
           <SectionTitle
-            title="Why Choose ShipStation for Your Personal Website?"
-            paragraph="Create, design, and deploy your professional portfolio with ease - no coding required."
+            title="Why use ShipStation for your personal website?"
+            // paragraph="Create, design, and deploy your professional portfolio with ease - no coding required."
             center
           />
 
@@ -32,14 +32,18 @@ const Features = () => {
             "@context": "https://schema.org",
             "@type": "ItemList",
             "itemListElement": [
-              ${featuresData.map((feature, index) => `
+              ${featuresData
+                .map(
+                  (feature, index) => `
                 {
                   "@type": "ListItem",
                   "position": ${index + 1},
                   "name": "${feature.title}",
                   "description": "${feature.paragraph}"
                 }
-              `).join(',')}
+              `,
+                )
+                .join(",")}
             ]
           }
         `}

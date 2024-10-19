@@ -10,10 +10,12 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "ShipStation.ai - AI-Powered Personal Website & Portfolio Builder (No Code)",
+  title:
+    "ShipStation - AI-Powered Personal Website & Portfolio Builder (No Code)",
   description:
     "Create stunning personal websites and portfolios in minutes with ShipStation.ai. Our AI-powered platform requires no coding skills. Perfect for engineers, designers, and professionals.",
-  keywords: "personal website builder no code, personal portfolio builder, AI-powered portfolio, resume to website, custom domain integration, portfolio website, no coding required",
+  keywords:
+    "personal website builder no code, personal portfolio builder, AI-powered portfolio, resume to website, custom domain integration, portfolio website, no coding required",
   openGraph: {
     title: "ShipStation.ai - Create Your Dream Portfolio in Minutes",
     description:
@@ -86,12 +88,12 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <Features />
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <GithubButton
           href="https://github.com/daytimedrinkingclub/shipstation"
-          stars={67}
+          stars={69}
         />
-      </div>
+      </div> */}
       <Video />
       <Testimonials />
       <PricingContainer />

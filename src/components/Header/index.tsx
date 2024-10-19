@@ -1,9 +1,9 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import menuData from "./menuData";
+import Logo from "/public/images/logo/logo.svg";
 
 const Header = () => {
   // Navbar toggle
@@ -56,14 +56,10 @@ const Header = () => {
                 } `}
               >
                 <div className="flex items-center">
-                  <Image
-                    src="/images/logo/logo.svg"
-                    alt="logo"
-                    width={40}
-                    height={40}
-                    className="mr-2 fill-black dark:fill-white"
-                  />
-                  <span className="text-xl font-bold">ShipStation.AI</span>
+                  <Logo className="mr-2  text-black dark:text-white" />
+                  <span className="text-2xl font-bold text-black dark:text-white">
+                    ShipStation.AI
+                  </span>
                 </div>
               </Link>
             </div>
@@ -93,7 +89,7 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 dark:border-body-color/20 dark:bg-dark ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
@@ -117,7 +113,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 dark:text-white/70 dark:group-hover:text-white"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -139,7 +135,7 @@ const Header = () => {
                 </nav>
               </div>
             </div>
-            <div className="sm:flex items-center justify-end hidden pr-16 lg:w-[260px] lg:pr-0">
+            <div className="hidden items-center justify-end pr-16 sm:flex lg:w-[260px] lg:pr-0">
               <Link
                 href={process.env.NEXT_PUBLIC_SHIPSTATION_APP_URL}
                 className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md border border-white/20 bg-primary px-6 py-2 text-base font-semibold text-white backdrop-blur-lg transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50"

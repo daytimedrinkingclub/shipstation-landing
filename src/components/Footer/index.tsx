@@ -1,43 +1,39 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "/public/images/logo/logo.svg";
 
 const Footer = () => {
   const openChatWidget = () => {
-    if (typeof window !== 'undefined' && window.$chatwoot) {
+    if (typeof window !== "undefined" && window.$chatwoot) {
       window.$chatwoot.toggle("open");
     }
   };
 
   return (
     <>
-      <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
+      <footer className="relative z-10 bg-white pt-16 md:pt-20 lg:pt-24 dark:bg-gray-dark">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <div className="flex items-center">
-                    <Image
-                      src="/images/logo/logo.svg"
-                      alt="logo"
-                      width={40}
-                      height={40}
-                      className="mr-2"
-                    />
-                    <span className="text-xl font-bold">ShipStation.AI</span>
+                    <Logo className="mr-2 text-black dark:text-white" />
+                    <span className="text-xl font-bold text-black dark:text-white">
+                      ShipStation.AI
+                    </span>
                   </div>
                 </Link>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                <p className="mb-2 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                   Generate stunning portfolio without tears
                 </p>
                 <div className="text-sm text-body-color dark:text-body-color-dark">
                   <span>Copyright © 2024 </span>
                   <span>Created by </span>
-                  <a 
-                    href="https://incubatorop.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                  <a
+                    href="https://incubatorop.com"
+                    target="_blank"
                     className="text-primary hover:underline"
                   >
                     IncubatorOP
@@ -169,7 +165,7 @@ const Footer = () => {
                       href="/terms.html"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      TOS
+                      Terms of Service
                     </Link>
                   </li>
                   <li>
@@ -201,11 +197,13 @@ const Footer = () => {
                   <li>
                     <button
                       onClick={(event) => {
-                        navigator.clipboard.writeText('anuj@daytimedrinking.club');
+                        navigator.clipboard.writeText(
+                          "anuj@daytimedrinking.club",
+                        );
                         const button = event.currentTarget as HTMLButtonElement;
-                        button.textContent = 'Email Copied to clipboard!';
+                        button.textContent = "Email Copied to clipboard!";
                         setTimeout(() => {
-                          button.textContent = 'Copy Contact Email';
+                          button.textContent = "Copy Contact Email";
                         }, 3000);
                       }}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"

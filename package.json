@@ -21,9 +21,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.13.1",
-    "react-modal-video": "^2.0.1"
+    "react-modal-video": "^2.0.1",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^3.5.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20.8.9",
     "@types/react": "^18.2.33",
     "autoprefixer": "^10.4.17",

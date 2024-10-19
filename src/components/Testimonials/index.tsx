@@ -5,28 +5,28 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Sakshi Bhatia",
     designation: "UX Designer",
     content:
       "ShipStation.ai transformed my portfolio creation process. In just minutes, I had a stunning, professional portfolio that truly showcased my work. It's incredibly intuitive and the AI-powered suggestions were spot-on!",
     image: "https://desilog.sivaramp.com/i/avatars/3/200",
-    star: 5,
+    star: 4,
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Dawar Mirza",
     designation: "Software Engineer",
     content:
       "As a developer, I was skeptical about AI-generated portfolios. But ShipStation.ai blew me away! It accurately represented my skills and projects, and the customization options allowed me to add my personal touch.",
     image: "https://desilog.sivaramp.com/i/avatars/4/200",
-    star: 5,
+    star: 4,
   },
   {
     id: 3,
-    name: "Mike Rodriguez",
+    name: "Mike Ross",
     designation: "Freelance Graphic Designer",
     content:
-      "ShipStation.ai is a game-changer for freelancers like me. It created a portfolio that perfectly captures my style and expertise. The AI-driven design suggestions saved me countless hours. It's like having a personal brand strategist!",
+      "ShipStation.ai is a game-changer for freelancers like me. It created a portfolio that perfectly captures my style and expertise. The AI-driven design suggestions saved me countless hours. Highly recommended!",
     image: "https://desilog.sivaramp.com/i/avatars/5/200",
     star: 5,
   },
@@ -34,11 +34,11 @@ const testimonialData: Testimonial[] = [
 
 const Testimonials = () => {
   return (
-    <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
+    <section className="bg-white dark:bg-black relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="Discover what our users love about ShipStation.ai. From effortless portfolio creation to AI-powered customization, hear how we're revolutionizing the way professionals showcase their work online."
           center
         />
 
