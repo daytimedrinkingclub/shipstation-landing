@@ -24,7 +24,7 @@ app.prepare().then(() => {
       res.send(htmlContent);
     } catch (error) {
       console.error('Error:', error);
-      res.status(404).send('Not Found');
+      res.redirect(process.env.NEXT_PUBLIC_MAIN_URL);
     }
   };
 
@@ -38,9 +38,12 @@ app.prepare().then(() => {
   server.use((req, res, next) => {
     const hostname = req.hostname;
     const mainDomain = process.env.NEXT_PUBLIC_PROFILE_DOMAIN;
+
+    console.log("Got request for", hostname);
     
     if (hostname !== mainDomain && hostname.endsWith(`.${mainDomain}`)) {
       const slug = hostname.replace(`.${mainDomain}`, '');
+      console.log("Rendering", slug);
       renderSite(slug, res);
     } else {
       next();
