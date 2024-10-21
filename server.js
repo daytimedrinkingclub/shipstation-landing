@@ -9,8 +9,8 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  server.get('/site/:slug', async (req, res) => {
-    const { slug } = req.params;
+  // Function to handle rendering for both subdomain and /site/:slug
+  const renderSite = async (slug, res) => {
     const baseUrl = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/shipstation-websites/websites`;
     const url = `${baseUrl}/${slug}/index.html`;
 
@@ -25,6 +25,25 @@ app.prepare().then(() => {
     } catch (error) {
       console.error('Error:', error);
       res.status(404).send('Not Found');
+    }
+  };
+
+  // Handle /site/:slug route
+  server.get('/site/:slug', async (req, res) => {
+    const { slug } = req.params;
+    await renderSite(slug, res);
+  });
+
+  // Handle subdomain routing
+  server.use((req, res, next) => {
+    const hostname = req.hostname;
+    const mainDomain = process.env.NEXT_PUBLIC_PROFILE_DOMAIN;
+    
+    if (hostname !== mainDomain && hostname.endsWith(`.${mainDomain}`)) {
+      const slug = hostname.replace(`.${mainDomain}`, '');
+      renderSite(slug, res);
+    } else {
+      next();
     }
   });
 
