@@ -34,6 +34,19 @@ app.prepare().then(() => {
     await renderSite(slug, res);
   });
 
+  // Handle NEXT_PUBLIC_PROFILE_DOMAIN/slug route
+  server.get('/:slug', async (req, res, next) => {
+    const { slug } = req.params;
+    const hostname = req.hostname;
+    const mainDomain = process.env.NEXT_PUBLIC_PROFILE_DOMAIN;
+
+    if (hostname === mainDomain) {
+      await renderSite(slug, res);
+    } else {
+      next();
+    }
+  });
+
   // Handle subdomain routing
   server.use((req, res, next) => {
     const hostname = req.hostname;
