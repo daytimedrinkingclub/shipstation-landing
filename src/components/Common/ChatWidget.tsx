@@ -14,7 +14,7 @@ const ChatwootWidget = () => {
   useEffect(() => {
     // This code will only run on the client-side
     (function (d: Document, t: string) {
-      var BASE_URL = "https://app.chatwoot.com";
+      var BASE_URL = process.env.NEXT_PUBLIC_CHATWOOT_BASE_URL;
       var g = d.createElement(t) as HTMLScriptElement,
         s = d.getElementsByTagName(t)[0];
       g.src = BASE_URL + "/packs/js/sdk.js";
@@ -23,7 +23,7 @@ const ChatwootWidget = () => {
       s.parentNode?.insertBefore(g, s);
       g.onload = function () {
         window.chatwootSDK.run({
-          websiteToken: "Vf744EW3QdfJHmkNBjxxte24",
+          websiteToken: process.env.NEXT_PUBLIC_CHATWOOT_WEBSITE_TOKEN,
           baseUrl: BASE_URL,
         });
       };
