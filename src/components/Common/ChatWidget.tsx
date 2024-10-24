@@ -23,8 +23,8 @@ const ChatwootWidget = () => {
       s.parentNode?.insertBefore(g, s);
       g.onload = function () {
         window.chatwootSDK.run({
-          websiteToken: process.env.NEXT_PUBLIC_CHATWOOT_WEBSITE_TOKEN,
-          baseUrl: BASE_URL,
+          websiteToken: process.env.NEXT_PUBLIC_CHATWOOT_WEBSITE_TOKEN!,
+          baseUrl: BASE_URL!,
         });
       };
     })(document, "script");
