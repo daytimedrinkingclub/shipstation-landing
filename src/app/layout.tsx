@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import { Raleway } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
+import { PostHogProvider } from '@/providers/PostHogProvider'
 
 const raleway = Raleway({ subsets: ["latin"] });
 export default function RootLayout({
@@ -21,11 +22,13 @@ export default function RootLayout({
       <head />
 
       <body className={`bg-black ${raleway.className}`}>
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
+        <PostHogProvider>
+          <Providers>
+            <Header />
+            {children}
+            <Footer />
+          </Providers>
+        </PostHogProvider>
       </body>
     </html>
   );
