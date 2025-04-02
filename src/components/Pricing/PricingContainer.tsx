@@ -124,7 +124,7 @@ const PricingContainer = () => {
 
         <h2 className="mt-12 text-center text-xl font-bold md:text-3xl">
           All this for a onetime price of{" "}
-          <span className="text-3xl md:text-4xl">$12</span>. <br /> <small>Yes, you
+          <span className="text-3xl md:text-4xl">$9</span>. <br /> <small>Yes, you
           read that right.</small>
         </h2>
         <p className="mt-5 text-center text-lg font-light text-gray-600 dark:text-gray-400">
