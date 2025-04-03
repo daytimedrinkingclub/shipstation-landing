@@ -29,7 +29,7 @@ const Footer = () => {
                   Generate stunning portfolio without tears
                 </p>
                 <div className="text-sm text-body-color dark:text-body-color-dark">
-                  <span>Copyright © 2024 </span>
+                  <span>Copyright © 2025 </span>
                   <span>Created by </span>
                   <a
                     href="https://incubatorop.com"
