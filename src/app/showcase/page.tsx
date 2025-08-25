@@ -97,7 +97,7 @@ export default function InspirationPage() {
             <div className="container mx-auto mt-20 px-4 py-8">
               <h4 className="mb-6 text-xl font-bold leading-tight text-black dark:text-white">
                 Here are some of the websites people have built with
-                ShipStation.AI
+                FirstSite.app
               </h4>
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {websites.map((website) => (
@@ -111,7 +111,7 @@ export default function InspirationPage() {
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                       <a
-                        href={`${baseUrl}/site/${website.slug}`}
+                        href={`${baseUrl}${website.slug}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 rounded border border-white bg-transparent px-4 py-2 text-white transition-colors duration-300 hover:bg-white hover:text-black"

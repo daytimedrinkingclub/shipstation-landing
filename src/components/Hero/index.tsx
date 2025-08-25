@@ -21,7 +21,7 @@ const Hero = () => {
                   Imagine ChatGPT, but for your personal website. No more
                   searching for the perfect template, messing with copywriting,
                   or worrying about the code and hosting. <br /> <br />
-                  With ShipStation, you can have your personal website live in
+                  With FirstSite, you can have your personal website live in
                   minutes.
                 </p>
                 <div className="flex flex-col items-start justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">

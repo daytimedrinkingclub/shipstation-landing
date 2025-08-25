@@ -5,17 +5,17 @@ const PricingContainer = () => {
     {
       title: "Unique Designs",
       description:
-        "Dont search for template, just describe what you want. Here's a mario themed portfolio. ShipStation will create anything you want",
+        "Dont search for template, just describe what you want. Here's a mario themed portfolio. FirstSite will create anything you want",
     },
     {
       title: "Connect your domain",
       description:
-        "Host your portfolio on your own custom domain to stand out and make a statement. ShipStation manages the hosting and gives FREE SSL",
+        "Host your portfolio on your own custom domain to stand out and make a statement. FirstSite manages the hosting and gives FREE SSL",
     },
     {
       title: "Early bird price",
       description:
-        "Available for a limited time, special pricing for early adopters and first 100 users on ShipStation",
+        "Available for a limited time, special pricing for early adopters and first 100 users on FirstSite",
     },
     {
       title: "Lifetime Access",
@@ -25,12 +25,12 @@ const PricingContainer = () => {
     {
       title: "Regular updates",
       description:
-        "We are always improving ShipStation.ai. You can follow the development on our discord community",
+        "We are always improving FirstSite.app. You can follow the development on our discord community",
     },
     {
       title: "Premium Support",
       description:
-        "Join our discord community for instant help. We will help you get the most out of ShipStation. If still unsatisfied, we will book you time with our CTO for a call",
+        "Join our discord community for instant help. We will help you get the most out of FirstSite. If still unsatisfied, we will book you time with our CTO for a call",
     },
   ];
 
@@ -128,7 +128,7 @@ const PricingContainer = () => {
           read that right.</small>
         </h2>
         <p className="mt-5 text-center text-lg font-light text-gray-600 dark:text-gray-400">
-          Try ShipStation for free. No credit card required.
+          Try FirstSite for free. No credit card required.
         </p>
       </div>
     </section>

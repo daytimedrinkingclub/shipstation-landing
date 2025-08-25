@@ -8,11 +8,11 @@ const Features = () => {
       <section
         id="features"
         className="bg-white py-16 md:py-20 lg:py-28 dark:bg-black"
-        aria-label="ShipStation Features"
+        aria-label="FirstSite Features"
       >
         <div className="container">
           <SectionTitle
-            title="Why use ShipStation for your personal website?"
+            title="Why use FirstSite for your personal website?"
             // paragraph="Create, design, and deploy your professional portfolio with ease - no coding required."
             center
           />

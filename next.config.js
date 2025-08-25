@@ -25,7 +25,12 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "supabasekong-shipstation.badalhibadal.com",
+        hostname: "FirstSite.app",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "shipstationsupabase.anug.in",
         port: "",
       },
     ],
