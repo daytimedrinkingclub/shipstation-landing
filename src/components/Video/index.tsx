@@ -17,7 +17,7 @@ const Video = () => {
       <div className="container">
         <div className="flex flex-col items-center">
           <SectionTitle
-            title="Want to see how easy it is to use ShipStation?"
+            title="Want to see how easy it is to use FirstSite?"
             // paragraph="Don't take our word for it, Just create one for free."
             center
             mb="80px"

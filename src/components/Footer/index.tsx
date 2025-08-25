@@ -21,7 +21,7 @@ const Footer = () => {
                   <div className="flex items-center">
                     <Logo className="mr-2 text-black dark:text-white" />
                     <span className="text-xl font-bold text-black dark:text-white">
-                      ShipStation.AI
+                      FirstSite
                     </span>
                   </div>
                 </Link>

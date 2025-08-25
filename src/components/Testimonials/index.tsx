@@ -8,7 +8,7 @@ const testimonialData: Testimonial[] = [
     name: "Sakshi Bhatia",
     designation: "UX Designer",
     content:
-      "ShipStation.ai transformed my portfolio creation process. In just minutes, I had a stunning, professional portfolio that truly showcased my work. It's incredibly intuitive and the AI-powered suggestions were spot-on!",
+      "FirstSite.app transformed my portfolio creation process. In just minutes, I had a stunning, professional portfolio that truly showcased my work. It's incredibly intuitive and the AI-powered suggestions were spot-on!",
     image: "https://desilog.sivaramp.com/i/avatars/3/200",
     star: 4,
   },
@@ -17,7 +17,7 @@ const testimonialData: Testimonial[] = [
     name: "Dawar Mirza",
     designation: "Software Engineer",
     content:
-      "As a developer, I was skeptical about AI-generated portfolios. But ShipStation.ai blew me away! It accurately represented my skills and projects, and the customization options allowed me to add my personal touch.",
+      "As a developer, I was skeptical about AI-generated portfolios. But FirstSite.app blew me away! It accurately represented my skills and projects, and the customization options allowed me to add my personal touch.",
     image: "https://desilog.sivaramp.com/i/avatars/4/200",
     star: 4,
   },
@@ -26,7 +26,7 @@ const testimonialData: Testimonial[] = [
     name: "Mike Ross",
     designation: "Freelance Graphic Designer",
     content:
-      "ShipStation.ai is a game-changer for freelancers like me. It created a portfolio that perfectly captures my style and expertise. The AI-driven design suggestions saved me countless hours. Highly recommended!",
+      "FirstSite.app is a game-changer for freelancers like me. It created a portfolio that perfectly captures my style and expertise. The AI-driven design suggestions saved me countless hours. Highly recommended!",
     image: "https://desilog.sivaramp.com/i/avatars/5/200",
     star: 5,
   },
@@ -38,7 +38,7 @@ const Testimonials = () => {
       <div className="container">
         <SectionTitle
           title="What Our Users Says"
-          paragraph="Discover what our users love about ShipStation.ai. From effortless portfolio creation to AI-powered customization, hear how we're revolutionizing the way professionals showcase their work online."
+          paragraph="Discover what our users love about FirstSite.app. From effortless portfolio creation to AI-powered customization, hear how we're revolutionizing the way professionals showcase their work online."
           center
         />
 
