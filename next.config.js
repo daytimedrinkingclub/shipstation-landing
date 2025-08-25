@@ -25,7 +25,12 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "FirstSite.app",
+        hostname: "firstsite.me",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "firstsite.app",
         port: "",
       },
       {
